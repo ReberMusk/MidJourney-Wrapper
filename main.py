@@ -2,7 +2,7 @@ import discord
 import Globals
 from Salai import PassPromptToSelfBot, Upscale, MaxUpscale, Variation
 
-bot = discord.Bot(intents=discord.Intents.all())
+bot = discord.Bot(intents=discord.Intents.all(), proxy='http://127.0.0.1:7890')
 
 
 @bot.event

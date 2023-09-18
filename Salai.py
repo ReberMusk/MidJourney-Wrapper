@@ -4,7 +4,7 @@ import requests
 def PassPromptToSelfBot(prompt : str):
     payload ={"type":2,"application_id":"936929561302675456","guild_id":Globals.SERVER_ID,
               "channel_id":Globals.CHANNEL_ID,"session_id":"2fb980f65e5c9a77c96ca01f2c242cf6",
-              "data":{"version":"1077969938624553050","id":"938956540159881230","name":"imagine","type":1,"options":[{"type":3,"name":"prompt","value":prompt}],
+              "data":{"version":"1118961510123847772","id":"938956540159881230","name":"imagine","type":1,"options":[{"type":3,"name":"prompt","value":prompt}],
                       "application_command":{"id":"938956540159881230",
                                              "application_id":"936929561302675456",
                                              "version":"1077969938624553050",
@@ -24,6 +24,8 @@ def PassPromptToSelfBot(prompt : str):
     return response
 
 def Upscale(index : int, messageId : str, messageHash : str):
+    # 记录一段日志
+    
     payload = {"type":3,
     "guild_id":Globals.SERVER_ID,
     "channel_id":Globals.CHANNEL_ID,
